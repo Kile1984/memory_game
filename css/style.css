@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Pacifico');
+body{
+	font-family: 'Allerta Stencil', sans-serif;
+	/*font-family: 'Pacifico', cursive;*/
+	color: #287372;
+	background: #b5f1f8;
+}
+#logInBgr{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("images/memory-game-bgr.png");
+	z-index: 999;
+}
+#logInData{
+	background: #474f5a;
+	padding: 10px;
+	border-radius: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 340px;
+	text-align: center;
+}
+#logInData input{
+	color: #fff;
+	display: block;
+    width: 100%;
+	background: transparent;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #fff;
+}
+#logInData label{
+	
+}
+#logInData button{
+	background: #fff;
+	border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#logInData #play{
+	background: #134c45;
+}
+.jumbotron{
+	background: url("images/jumbotron-bgr.jpg") no-repeat;
+	background-size: cover;
+	border-bottom: 5px double  #fff;
+}
+h1{
+	font-size: calc(22px + 5vw);
+}
+h2{
+	font-family: 'Pacifico', cursive;
+	font-size: calc(18px + 3vw);
+}
+.level h1, .animate{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p{
+	font-size: 30px;
+}
+:focus{
+    outline: none!important;
+}
+#startBtn{
+	background: cadetblue;
+	width: 100px;
+	cursor: pointer;
+	margin: 20px auto;
+    padding: 10px;
+}
+#wrapp{
+	width: 404px;
+	height: 404px;
+	margin: 0 auto;
+}
+.boxes{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: relative;
+}
+.front, .back{
+	width: 100px;
+	height: 100px;
+	border:1px dashed  #000;
+}
+.front{
+	background: #7de6f2;
+}
+.back{
+	background: #379ad6;
+	line-height: 86px;
+	transition: .5s;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
